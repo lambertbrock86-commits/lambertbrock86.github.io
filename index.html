@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rainbow Text</title>
+  <style>
+    body {
+      background: #111;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 100px;
+    }
+
+    .rainbow-text {
+      font-size: 48px;
+      font-weight: bold;
+      background: linear-gradient(
+        to right, 
+        red, orange, yellow, green, blue, indigo, violet
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: rainbow 5s linear infinite;
+      display: inline-block;
+    }
+
+    @keyframes rainbow {
+      0% {
+        background-position: 0%;
+      }
+      100% {
+        background-position: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="rainbow-text">🌈 cody is very very very very very super duper gay! 🌈</div>
+</body>
+</html>
